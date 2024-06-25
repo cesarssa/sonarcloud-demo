@@ -11,9 +11,9 @@ public class DemoRestController {
 	@RequestMapping(value="/api/v1,0/capitalize")
 	public ResponseEntity<String> capitalize(@RequestParam("test") String text){
 		
-		//String capital = text.toUpperCase();
+		String capital = text.toUpperCase();
 		//String country = "Brazil";
-		Integer year = 2024;
+		//Integer year = 2024;
 		return ResponseEntity.ok(capital);
 		
 	}
